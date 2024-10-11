@@ -92,8 +92,19 @@
         --------------------------------------------------*/
         reloadButton.addEventListener('click', reload);
         function reload(event){
-            currentAmmo--
-            if()
+            var bulletsNeeded = 6 - currentAmmo
+        
+            if(inventory<=0){
+                inventory=0; 
+            } else if (bulletsNeeded>inventory){
+                currentAmmo=inventory
+                inventory=0
+            } else {
+                inventory-=bulletsNeeded
+            currentAmmo+=bulletsNeeded
+            } 
+            reloadDisplay.innerHTML = `INVENTORY: ${inventory}`
+            triggerDisplay.innerHTML = `AMMO: ${currentAmmo}`
         }
 
     </script>
