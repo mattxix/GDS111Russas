@@ -13,7 +13,7 @@
     ctx.lineWidth = "5";
     ctx.beginPath();
     ctx.moveTo(85,682);
-    ctx.lineTo(278,549);
+    ctx.lineTo(280,547);
     ctx.stroke();
 
 
